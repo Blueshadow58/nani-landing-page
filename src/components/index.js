@@ -1,0 +1,5 @@
+export {default as WhyChooseMe} from './whyChooseMe'
+export {default as WhoIAm} from './whoIAm'
+export {default as WhatIDo} from './whatIDo'
+export {default as Header} from './header'
+export {default as Contact} from './contact'
