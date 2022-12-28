@@ -3,7 +3,7 @@ import {WhyChooseMe,WhoIAm,WhatIDo,Header,Contact} from './components/index';
 
 function App() {
   return (
-    <div className="App ">
+    <div className=" ">
       <Header/>
       <WhoIAm/>
       <WhatIDo/>
