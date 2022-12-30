@@ -11,7 +11,7 @@ export default function Contact() {
 
   return (
     <>
-    <div className=" d-flex flex-column min-vh-100 mt-auto  p-0 m-0 bg-light ">
+    <div className=" d-flex flex-column min-vh-100 mt-auto  p-0 m-0  ">
 
       <Container>
         <Row className='text-lg-start text-center  '>
