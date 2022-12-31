@@ -1,11 +1,12 @@
 import React from 'react'
+import { stylesHeader } from './stylesHeader'
 
 export default function Header() {
   return (
     <nav className="flex justify-center items-center text-center flex-wrap bg-gradient-to-r from-yellow-200 via-lavander-300 to-pink-400 p-6">
     <div className="flex items-center flex-shrink-0 text-white mr-6">
       <div className="py-2 text-center">
-          <img src={require('../../images/Logotipo - Negro nani.png')} height={25} alt='img'></img>
+      <img className=' d-none d-xxl-block' style={stylesHeader.naniLogo}  src={require('../../images/Logo N sombreado.png')}  alt='img'></img>
         </div>
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
@@ -30,6 +31,8 @@ export default function Header() {
         </div>
     </div>
 </nav>
+
   )
 }
+
 
