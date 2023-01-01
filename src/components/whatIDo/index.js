@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { styles } from './styles'
 
 export default function WhatIDo() {
@@ -36,7 +36,8 @@ export default function WhatIDo() {
                   </p>
 
                   <div>
-                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-3 px-4 rounded" >
+                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-3 px-4 rounded" style={styles.buttonPink} >
+                      {/* chequear este boton, no me toma el css */}
                         Contactame
                     </button>
                   </div>

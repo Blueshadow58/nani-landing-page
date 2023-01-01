@@ -7,7 +7,7 @@ export const styles = {
         boxShadow: '0px 10px 15px -20px #AEAEA6',
         fontWeight: '700',
     },
-    unicornioBruja: {         
+    unicornioNotebook: {         
         // alignSelf:'center',        
         position:'absolute',
         // display:'flex',        
@@ -24,12 +24,7 @@ export const styles = {
     shineText: {
         color: '#9747FF',
     },
-    buttonPink: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-
-    }
+    
     
 
     
