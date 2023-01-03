@@ -1,37 +1,40 @@
 import React from 'react'
 import { stylesHeader } from './stylesHeader'
+import { Col, Container, Row } from 'react-bootstrap'
 
 export default function Header() {
   return (
-    <nav className="flex justify-center items-center text-center flex-wrap bg-gradient-to-r from-yellow-200 via-lavander-300 to-pink-400 p-6">
-    <div className="flex items-center flex-shrink-0 text-white mr-6">
-      <div className="py-2 text-center">
-      <img className=' d-none d-xxl-block' style={stylesHeader.naniLogo}  src={require('../../images/Logo N sombreado.png')}  alt='img'></img>
-        </div>
-      </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
-        <div className="text-sm lg:flex-grow">
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-pink-400  mr-4">
-            Inicio
-          </b>
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-black  mr-4">
-            Quien soy?
-          </b>
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-black  mr-4">
-            Que hago?
-          </b>
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-black  mr-4">
-            Porque elegirme?
-          </b>
-        </div>
-          <div>
-            <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-2 px-4 rounded">
-              Contacto
-            </button>
-        </div>
-    </div>
-</nav>
+    <Container className=" min-vh-100  " fluid>
+          
+            <Container>
+              <Row className='text-lg-start text-center'>
+                <Col lg={12} sm={12} className='py-5 align-self-start'>
+                  <span className="display-6 " style={stylesHeader.title} >Hola soy Nani</span>  
 
+                </Col>                
+              </Row>  
+            </Container>
+
+            <Container fluid>
+              <Row className='text-lg-start text-center'>
+                <Col className='d-flex flex-column ' lg={6} md={10} >
+                  <span className='display-5 fw-bold pb-4'>Acesora en Marketing de contenido</span> 
+                  <p className=' fs-5 fw-700 '>
+                    Aca te brindare todas las herramientas necesarias para que puedas optimizar tu perfil en instagram, crear una estrategia de ventas 
+                    y disfrutar emprender. 
+                    ¿Estas lista?<br/>
+                  </p>
+                  
+                  <div>
+                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-3 px-4 rounded" style={stylesHeader.buttonHeader} >
+                        Contactame
+                    </button>
+                  </div>
+
+                </Col>                                   
+              </Row>
+            </Container>
+      </Container> 
   )
 }
 

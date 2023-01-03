@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { styles } from './styles'
+import { stylesWhatIDo } from './stylesWhatIDo'
 
 export default function WhatIDo() {
   return (
@@ -9,7 +9,7 @@ export default function WhatIDo() {
             <Container>
               <Row className='text-center'>
                 <Col lg={12} sm={12} className='py-5 align-self-start'>
-                  <span className="display-5 " style={styles.title} >¿Que hago?</span>  
+                  <span className="display-5 " style={stylesWhatIDo.title} >¿Que hago?</span>  
                   
                 </Col>                
               </Row>  
@@ -20,7 +20,7 @@ export default function WhatIDo() {
                 <Col className='d-flex flex-column' lg={6} md={10} >
 
                   <div className="py-3 ">
-                      <img className='img-fluid d-none d-xl-block' style={styles.unicornioBruja} src={require('../../images/Unicornio bruja.png')} alt='img'></img>
+                      <img className='img-fluid d-none d-xl-block' style={stylesWhatIDo.unicornioBruja} src={require('../../images/Unicornio bruja.png')} alt='img'></img>
                   </div>
 
                   <p className='fs-5 fw-700 '>
@@ -36,7 +36,7 @@ export default function WhatIDo() {
                   </p>
 
                   <div>
-                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-3 px-4 rounded" style={styles.buttonPink} >
+                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-3 px-4 rounded" style={stylesWhatIDo.buttonPink} >
                       {/* chequear este boton, no me toma el css */}
                         Contactame
                     </button>
