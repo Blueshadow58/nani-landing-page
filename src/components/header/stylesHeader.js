@@ -14,9 +14,8 @@ export const stylesHeader = {
         alignItems: 'center',
         justifyContent: 'center',
 
-    }
-
-    
+    },
+   
 
     
 

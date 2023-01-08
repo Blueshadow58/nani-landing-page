@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 import { Col, Container, Row } from 'react-bootstrap'
 import { stylesWhatIDo } from './stylesWhatIDo'
 
@@ -35,12 +35,11 @@ export default function WhatIDo() {
                     que es lo que necesita ser comunicado de tu negocio, y como hacerlo para que tu emprendimiento pueda seguir creciendo.
                   </p>
 
-                  <div>
-                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-3 px-4 rounded" style={stylesWhatIDo.buttonPink} >
-                      {/* chequear este boton, no me toma el css */}
-                        Contactame
+                  <Link to={'contact'}>
+                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-2 px-4 rounded">
+                      Contactame
                     </button>
-                  </div>
+                  </Link>
 
                 </Col>                                   
               </Row>

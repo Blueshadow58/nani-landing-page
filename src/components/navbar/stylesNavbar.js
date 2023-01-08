@@ -4,9 +4,9 @@ export const stylesNavbar = {
     naniLogo: {
         position:'absolute',
         display: 'flex',
-        top: '-1vh',
+        top: '-2vh',
         right:'165vh',     
-        maxHeight:'25vh',
-        maxWidth:'25vh'
+        maxHeight:'20vh',
+        maxWidth:'20vh'
     },
 }

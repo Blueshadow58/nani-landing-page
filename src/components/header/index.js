@@ -1,12 +1,15 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 import { stylesHeader } from './stylesHeader'
 import { Col, Container, Row } from 'react-bootstrap'
 
 export default function Header() {
   return (
     <Container className=" min-vh-100  " fluid>
+             {/* <div className="">
+              <img className='' style={stylesHeader.nani} src={require('../../images/Nani.png')} alt='img'></img>
+            </div> */}
           
-            <Container>
+            <Container >
               <Row className='text-lg-start text-center'>
                 <Col lg={12} sm={12} className='py-5 align-self-start'>
                   <span className="display-6 " style={stylesHeader.title} >Hola soy Nani</span>  
@@ -25,11 +28,11 @@ export default function Header() {
                     ¿Estas lista?<br/>
                   </p>
                   
-                  <div>
-                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-3 px-4 rounded" style={stylesHeader.buttonHeader} >
-                        Contactame
+                  <Link to={'contact'} >
+                    <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-2 px-4 rounded">
+                      Contactame
                     </button>
-                  </div>
+                  </Link>
 
                 </Col>                                   
               </Row>
