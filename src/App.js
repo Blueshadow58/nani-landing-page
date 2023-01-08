@@ -1,9 +1,10 @@
 import React from 'react';
-import {WhyChooseMe,WhoIAm,WhatIDo,Header,Contact} from './components/index';
+import {WhyChooseMe,WhoIAm,WhatIDo,Navbar,Header,Contact} from './components/index';
 
 function App() {
   return (
     <div className=" ">
+      <Navbar/>
       <Header/>
       <WhoIAm/>
       <WhatIDo/>

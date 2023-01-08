@@ -1,6 +1,7 @@
+import { isContentEditable } from "@testing-library/user-event/dist/utils";
 import { COLORS } from "../../constants/colors";
 
-export const styles = {   
+export const stylesWhatIDo = {   
     title: {        
         color: COLORS.secondary,
         boxShadow: '0px 10px 15px -20px #AEAEA6',
@@ -22,6 +23,12 @@ export const styles = {
     },
     shineText: {
         color: '#9747FF',
+    },
+    buttonPink: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+
     },
     
 
