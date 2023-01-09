@@ -33,13 +33,13 @@ export const styles = {
         // to left
         transform: 'translateX(30%)',
         // top: '20%',
-        right: '400px',
-        bottom: '400px',
+        right: '350px',
+        bottom: '340px',
     },
     element: {
         position: "absolute",
-        width: "100px",
-        height: "100px",
+        width: "150px",
+        height: "150px",
         borderRadius: "50%",
         top: "50 %",
         left: "50 %",
