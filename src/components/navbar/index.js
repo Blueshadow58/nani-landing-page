@@ -1,36 +1,60 @@
 import React from 'react'
-import { stylesNavbar } from './stylesNavbar'
+import { styles } from './styles'
 
 const navbar = () => {
+
+  const scrollToHeader = () => {
+    const whoIAm = document.getElementById('header')
+    whoIAm.scrollIntoView({ behavior: 'smooth' })
+  }
+  const scrollToWhoIAm = () => {
+    const whoIAm = document.getElementById('whoIAm')
+    whoIAm.scrollIntoView({ behavior: 'smooth' })
+  }
+  const scrollToWhatIDo = () => {
+    const whatIDo = document.getElementById('whatIDo')
+    whatIDo.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const scrollToWhyChooseMe = () => {
+    const whyChooseMe = document.getElementById('whyChooseMe')
+    whyChooseMe.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const scrollToContact = () => {
+    const contact = document.getElementById('contact')
+    contact.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
-    <nav className="flex justify-center items-center text-center flex-wrap bg-gradient-to-r from-yellow-200 via-lavander-300 to-pink-400 p-6">
-    <div className="flex items-center flex-shrink-0 text-white mr-6">
-      <div className="py-2 text-center">
-      <img className=' ' style={stylesNavbar.naniLogo}  src={require('../../images/Logo N sombreado.png')}  alt='img'></img>
+
+
+    <nav className="navbar navbar-expand-lg px-5 sticky-top" style={styles.navBarStyle} >
+      <div className="container-fluid">
+
+        <img style={styles.naniLogo} src={require('../../images/Logo-N-sombreado.png')} alt="Logo" />
+
+        <div className="collapse navbar-collapse" id="navbarText">
+          <ul className="navbar-nav me-auto mx-auto mb-2 mb-lg-0 ">
+            <li className="nav-item px-4">
+              <span className="nav-link " style={styles.navText} aria-current="page" onClick={scrollToHeader} >Inicio</span>
+            </li>
+            <li className="nav-item px-4">
+              <span className="nav-link " style={styles.navText} onClick={scrollToWhoIAm}>¿Quién soy?</span>
+            </li>
+            <li className="nav-item px-4">
+              <span className="nav-link " style={styles.navText} onClick={scrollToWhatIDo} >¿Qué hago?</span>
+            </li>
+            <li className="nav-item px-4">
+              <span className="nav-link" style={styles.navText} onClick={scrollToWhyChooseMe}>¿Por qué elegirme?</span>
+            </li>
+          </ul>
+          <span className="navbar-text">
+            <button style={styles.btnContacto} onClick={scrollToContact}>Contacto</button>
+          </span>
         </div>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
-        <div className="text-sm lg:flex-grow">
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-pink-400  mr-4">
-            Inicio
-          </b>
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-black  mr-4">
-            Quien soy?
-          </b>
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-black  mr-4">
-            Que hago?
-          </b>
-          <b href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-black  mr-4">
-            Porque elegirme?
-          </b>
-        </div>
-          <div>
-            <button className="bg-pink-400 hover:bg-pink-200 text-white font-bold py-2 px-4 rounded">
-              Contacto
-            </button>
-        </div>
-    </div>
-</nav>
+    </nav>
   )
 }
 
