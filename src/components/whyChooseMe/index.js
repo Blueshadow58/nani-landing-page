@@ -6,8 +6,8 @@ export default function WhyChooseMe() {
   return (
     <Container id='whyChooseMe' className=" min-vh-100  " fluid>
 
-      <Container>
-        <Row className='text-lg-start text-center'>
+      <Container className=''>
+        <Row className='text-xl-start text-center'>
           <Col lg={12} sm={12} className='py-5 align-self-start'>
             <span className="display-5 " style={styles.title} >¿Por qué elegirme?</span>
             <div className="py-3 ">
@@ -16,12 +16,12 @@ export default function WhyChooseMe() {
           </Col>
         </Row>
       </Container>
-      <Container className='mt-lg-5 pt-lg-5 ' fluid>
+      <Container className=' ' fluid>
         <Row className='justify-content-around'>
           {/* <Col className='bg-light  d-none d-xxl-block' lg={4}> */}
 
           {/* </Col>                                    */}
-          <Col className='d-flex flex-column  offset-lg-3 ' lg={6} md={10} >
+          <Col className='d-flex flex-column  offset-xl-3 ' lg={8} md={10} sm={10} xs={12} >
             <span className='display-4 fw-bold pb-4'>Si....</span>
             <p className='fs-5 fw-700 '>
               Te cuesta <strong>escribir</strong> las descripciones al subir posteos.

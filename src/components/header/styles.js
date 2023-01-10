@@ -23,9 +23,11 @@ export const styles = {
     nani: {
         maxHeight: '100%',
         maxWidth: '100%',
+        zIndex: '2',
     },
     circle: {
-
+        //send the circle to back of the page
+        zIndex: '1',
         position: 'absolute',
         // width: '500px',
         // height: '340px',

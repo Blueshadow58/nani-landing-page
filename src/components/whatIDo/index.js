@@ -22,7 +22,7 @@ export default function WhatIDo() {
       <Container className=' ' fluid>
         <Row className='justify-content-around'>
 
-          <Col className='d-flex flex-column' lg={6} md={10} >
+          <Col className='d-flex flex-column' lg={7} md={10} sm={10} xs={10} >
 
             <div className="py-3 ">
               <img className='img-fluid d-none d-xl-block' style={styles.unicornioBruja} src={require('../../images/Unicornio-bruja.png')} alt='img'></img>
