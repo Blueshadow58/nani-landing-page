@@ -21,8 +21,8 @@ export const styles = {
         height: '90vh',
     },
     nani: {
-        maxHeight: '100%',
-        maxWidth: '100%',
+        maxHeight: '90%',
+        maxWidth: '90%',
         zIndex: '2',
     },
     circle: {
