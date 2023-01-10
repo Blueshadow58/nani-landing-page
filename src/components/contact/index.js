@@ -1,12 +1,29 @@
-import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import { styles } from './styles'
+import isEmail from 'validator/lib/isEmail'
 
 export default function Contact() {
+  const email = React.useRef('')
+  const name = React.useRef('')
+  const subject = React.useRef('')
+  const phone = React.useRef('')
+  const message = React.useRef('')
 
+  const [validated, setValidated] = useState(false);
 
+  const handleSubmit = (event) => {
+    console.log('email', email.current.value)
+    const form = event.currentTarget;
+    // if this is the email field and it's not valid, put isvalid to false
+    if (form.checkValidity() === false || !isEmail(email.current.value)) {
 
-
+      event.preventDefault();
+      event.stopPropagation();
+      // email.current.value = isEmail(email.current.value) ? email.current.value : ''
+    }
+    setValidated(true);
+  };
 
   return (
     <>
@@ -21,29 +38,38 @@ export default function Contact() {
           <Row>
             <Col>
               <div className='' style={styles.formContainer}>
-                <form>
+                <Form action="https://formsubmit.io/send/gamonalfranco@gmail.com" method="POST" noValidate validated={validated} onSubmit={handleSubmit}>
+                  {/* <input type="hidden" name="_url" value="http://localhost:3000/" /> */}
+
+
                   <Row>
                     <Col lg={5} sm={12} className='py-2'>
                       <div className="form-floating">
-                        <textarea style={styles.textArea} className="form-control" id='floatingTextarea' placeholder='Escriba su mensaje'></textarea>
+                        <textarea required ref={message} name='Mensaje' style={styles.textArea} className="form-control" id='floatingTextarea' placeholder='Escriba su mensaje'></textarea>
                         <label className='text-muted fs-5' hmtlfor="floatingTextarea">Escriba su mensaje</label>
+                        <Form.Control.Feedback className='text-light fw-bold fs-6'>Bien!</Form.Control.Feedback>
                       </div>
                     </Col>
                     <Col lg={5} sm={12} className='py-2 ps-lg-5'>
                       <div className="mb-4 mt-5">
-                        <input type="text" style={styles.input} className="form-control" placeholder='Asunto:' />
+                        <input required ref={subject} type="text" name='Asunto' style={styles.input} className="form-control" placeholder='Asunto:' />
+                        <Form.Control.Feedback className='text-light fw-bold fs-6'>Bien!</Form.Control.Feedback>
                       </div>
                       <div className="mb-4">
-                        <input type="text" style={styles.input} className="form-control" placeholder='Nombre:' />
+                        <input required ref={name} type="text" name='Nombre' style={styles.input} className="form-control" placeholder='Nombre:' />
+                        <Form.Control.Feedback className='text-light fw-bold fs-6'>Bien!</Form.Control.Feedback>
                       </div>
                       <div className="mb-4">
-                        <input type="text" style={styles.input} className="form-control" placeholder='Telefono:' />
+                        <input required ref={phone} type="text" name='Telefono' style={styles.input} className="form-control" placeholder='Telefono:' />
+                        <Form.Control.Feedback className='text-light fw-bold fs-6'>Bien!</Form.Control.Feedback>
                       </div>
                       <div className="mb-5">
-                        <input type="text" style={styles.input} className="form-control" placeholder='Email:' />
+                        <input required ref={email} type="text" name='Correo' style={styles.input} className="form-control" placeholder='Email:' />
+                        <Form.Control.Feedback className='text-light fw-bold fs-6'>Bien!</Form.Control.Feedback>
+                        <Form.Control.Feedback className=' fw-bold fs-6' type="invalid">Porfavor ingrese un email valido ej: email@gmail.com</Form.Control.Feedback>
                       </div>
                       <div className='text-center'>
-                        <Button type="submit" className='px-5' style={styles.purpleButton} >Enviar</Button>
+                        <Button required type="submit" className='px-5' style={styles.purpleButton} >Enviar</Button>
                       </div>
 
                     </Col>
@@ -52,14 +78,11 @@ export default function Contact() {
                     <img className=' d-none d-xxl-block' style={styles.contactUnicorn} src={require('../../images/Unicornio-scooter.png')} alt='img'></img>
 
 
-                    {/* Img of the Unicorn */}
-                    {/* <div style={styles.containerImg} className=''> */}
 
-                    {/* </div>   */}
 
                   </Row>
 
-                </form>
+                </Form>
 
 
               </div>

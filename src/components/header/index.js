@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { styles } from './styles'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 const RenderCircles = React.lazy(() => import('./circle'))
+
 
 export default function Header() {
 
@@ -14,7 +16,7 @@ export default function Header() {
 
 
 
-  return (
+  return (<>
     <Container style={styles.header} className='px-lg-5' fluid>
       <Row id='header' className=" mb-5 h-100 " >
 
@@ -38,7 +40,7 @@ export default function Header() {
         </Col>
         <Col xl={5} lg={5} className='d-flex justify-content-end align-self-end '>
 
-          <React.Suspense fallback={<div>Loading...</div>}>
+          <React.Suspense fallback={<div></div>}>
             <RenderCircles />
           </React.Suspense>
 
@@ -48,6 +50,10 @@ export default function Header() {
         {/* </Row> */}
       </Row>
     </Container>
+    {/* insert jump of line  */}
+    <FloatingWhatsApp phoneNumber='+549388572-6293' accountName='Nani' avatar={require('../../images/nani/nani.png')} statusMessage='Acesora en
+Marketing de contenido' chatMessage={'Hola!🤝\nCómo puedo ayudarte?'} placeholder={'Escribir un mensaje...'} />
+  </>
   )
 }
 

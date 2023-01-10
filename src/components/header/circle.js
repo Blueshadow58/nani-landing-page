@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { styles } from './styles'
 const RenderCircles = () => {
 
@@ -32,7 +32,7 @@ const RenderCircles = () => {
                     angulo = 0
                 }
 
-            }, 55)
+            }, 50)
         }
 
 
