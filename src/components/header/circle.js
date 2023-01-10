@@ -40,12 +40,12 @@ const RenderCircles = () => {
         const imgs = document.getElementsByClassName('element')
 
 
-        imgs[0].innerHTML = `<img src=${require('../../images/Unicornio-corazón.png')} height=${150} alt='img'></img>`
-        imgs[1].innerHTML = `<img src=${require('../../images/Unicornio-globo.png')} height=${150} alt='img'></img>`
-        imgs[2].innerHTML = `<img src=${require('../../images/Unicornio-sentado-Rainbow.png')} height=${150} alt='img'></img>`
-        imgs[3].innerHTML = `<img src=${require('../../images/Unicornio-notebook.png')} height=${150} alt='img'></img>`
-        imgs[4].innerHTML = `<img src=${require('../../images/Unicornio-tobogan.png')} height=${150} alt='img'></img>`
-        imgs[5].innerHTML = `<img src=${require('../../images/Unicornio-scooter.png')} height=${150} alt='img'></img>`
+        imgs[0].innerHTML = `<img class='img-fluid' src=${require('../../images/Unicornio-corazón.png')}  alt='img'></img>`
+        imgs[1].innerHTML = `<img class='img-fluid' src=${require('../../images/Unicornio-globo.png')}  alt='img'></img>`
+        imgs[2].innerHTML = `<img class='img-fluid' src=${require('../../images/Unicornio-sentado-Rainbow.png')}  alt='img'></img>`
+        imgs[3].innerHTML = `<img class='img-fluid' src=${require('../../images/Unicornio-notebook.png')}  alt='img'></img>`
+        imgs[4].innerHTML = `<img class='img-fluid' src=${require('../../images/Unicornio-tobogan.png')}  alt='img'></img>`
+        imgs[5].innerHTML = `<img class='img-fluid' src=${require('../../images/Unicornio-scooter.png')}  alt='img'></img>`
 
         // optimise the performance of the image loading 
         for (let i = 0; i < imgs.length; i++) {
