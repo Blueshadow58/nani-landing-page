@@ -74,7 +74,7 @@ export default function Contact() {
                     </Col>
 
 
-                    <img className=' d-none d-xxl-block' style={styles.contactUnicorn} src={require('../../images/Unicornio-scooter.png')} alt='img'></img>
+                    <img className='img-fluid d-none d-xxl-block' style={styles.contactUnicorn} src={require('../../images/Unicornio-scooter.png')} alt='img'></img>
 
 
 
