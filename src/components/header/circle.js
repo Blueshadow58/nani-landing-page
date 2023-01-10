@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import { styles } from './styles'
-const RenderCircles = () => {
+import { useRef } from 'react';
 
+const RenderCircles = () => {
+    const windowSize = useRef([window.innerWidth, window.innerHeight]);
 
 
     useEffect(() => {
@@ -11,10 +13,11 @@ const RenderCircles = () => {
 
 
     const CirclesImg = () => {
+
         const circles = document.getElementsByClassName('element')
         if (circles.length > 0) {
             const n = 6;  // numero de circulos
-            const r = 450 // radio
+            const r = windowSize.current[0] / 4.5 // radio
 
             let angulo = 0;
             let originX = circles[0].offsetLeft
