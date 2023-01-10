@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { styles } from './styles'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
@@ -41,9 +41,10 @@ export default function Header() {
         <Col xl={5} lg={5} className='d-flex justify-content-end align-self-end '>
 
           <React.Suspense fallback={<div></div>}>
-            <RenderCircles />
+            <div className='d-none d-xxl-block'>
+              <RenderCircles />
+            </div>
           </React.Suspense>
-
 
           <img className='d-none d-xxl-block' style={styles.nani} src={require('../../images/nani/nani.png')} alt='img'></img>
         </Col>
@@ -51,8 +52,8 @@ export default function Header() {
       </Row>
     </Container>
     {/* insert jump of line  */}
-    <FloatingWhatsApp phoneNumber='+549388572-6293' accountName='Nani' avatar={require('../../images/nani/nani.png')} statusMessage='Acesora en
-Marketing de contenido' chatMessage={'Hola!🤝\nCómo puedo ayudarte?'} placeholder={'Escribir un mensaje...'} />
+    <FloatingWhatsApp phoneNumber='+549388572-6293' accountName='Nani' avatar={require('../../images/Logo-Rosa.png')} statusMessage='Acesora en
+Marketing de contenido' chatMessage={'Hola!🦄\nCómo puedo ayudarte?'} placeholder={'Escribir un mensaje...'} />
   </>
   )
 }

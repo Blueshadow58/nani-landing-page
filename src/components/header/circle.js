@@ -62,7 +62,7 @@ const RenderCircles = () => {
 
 
     return (
-        <div id="circle" className='d-flex align-items-center justify-content-center' style={styles.circle}  >
+        <div id="circle" className='d-flex align-items-center justify-content-center ' style={styles.circle}  >
             <div className='bg-light element' style={styles.element}>
 
             </div>
