@@ -18,7 +18,7 @@ const RenderCircles = () => {
         if (circles.length > 0) {
             const n = 6;  // numero de circulos
             // value of the radio of the circle custom to all window sizes
-            const r = windowSize.current[0] > 1200 ? 270 : windowSize.current[0] > 992 ? 250 : windowSize.current[0] > 768 ? 200 : windowSize.current[0] > 576 ? 150 : 100
+            const r = windowSize.current[0] > 1500 ? 350 : windowSize.current[0] > 1200 ? 270 : windowSize.current[0] > 992 ? 250 : windowSize.current[0] > 768 ? 200 : windowSize.current[0] > 576 ? 150 : 100
 
 
             let angulo = 0;
