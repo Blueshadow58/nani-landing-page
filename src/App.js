@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { WhyChooseMe, WhoIAm, WhatIDo, Navbar, Header, Contact } from './components/index';
 import WebFont from 'webfontloader';
 
