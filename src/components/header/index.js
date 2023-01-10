@@ -46,7 +46,7 @@ export default function Header() {
             </div>
           </React.Suspense>
 
-          <img className='d-none d-xxl-block' style={styles.nani} src={require('../../images/nani/nani.png')} alt='img'></img>
+          <img className='img-fluid d-none d-xxl-block' style={styles.nani} src={require('../../images/nani/nani.png')} alt='img'></img>
         </Col>
         {/* </Row> */}
       </Row>
