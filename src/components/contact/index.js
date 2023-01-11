@@ -120,7 +120,7 @@ export default function Contact() {
             </div>
           </Col>
           <Col lg={4} sm={12} className=' text-center py-2'>
-            <span className="h5 ">Asesoria en Marketing de contenidos</span>
+            <span className="h5 ">Asesoría en Marketing de contenidos</span>
           </Col>
           <Col lg={4} sm={12} className='text-lg-start text-center  '>
             <span className="d-block p-2 ">
