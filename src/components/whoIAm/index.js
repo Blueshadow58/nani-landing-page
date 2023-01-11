@@ -8,7 +8,7 @@ export default function WhoIAm() {
       <Container>
         <Row className='text-xl-start text-center'>
           <Col xl={8} lg={12} sm={12} className='py-5 align-self-start'>
-            <span className="display-5 " style={stylesWhoIAm.title} >¿Quien soy?</span>
+            <span className="display-5 " style={stylesWhoIAm.title} >¿Quién soy?</span>
 
           </Col>
         </Row>
@@ -23,15 +23,15 @@ export default function WhoIAm() {
             </div>
 
             <p className='fs-5 fw-700 justify'>
-              Trabaje como <strong>community manager</strong> en forma freelance y como paid media
-              en una Agencia de Marketin. Di capacitaciones en forma virtual y presencial a emprendedores en Jujuy, Argentina
-              sobre como optimizar su perfil en Instagram y Google My Business a traves de la Asociacion Civil
-              Puertas. Enseñe sobre <strong>Google Ads, Marketing Digital </strong> y habilidades blandas a traves del programa
-              Crece con <strong>Google de Junior Achievement</strong> Argentina, donde 300 jovenes de latinoamerica fueron
+              Trabajé como <strong>community manager</strong> en forma freelance y como paid media
+              en una Agencia de Marketing. Di capacitaciones en forma virtual y presencial a emprendedores en Jujuy, Argentina
+              sobre cómo optimizar su perfil en Instagram y Google My Business a través de la Asociación Civil
+              Puertas. Enseñé sobre <strong>Google Ads, Marketing Digital </strong> y habilidades blandas a través del programa
+              <strong>Crecé con Google de Junior Achievement Argentina</strong>, donde 300 jóvenes de latinoamérica fueron
               mis alumnos<br />
               <br />
-              Fui social media manager de la red Alumni de Junior Achievement Argentina en 2022 y del Foro Internacional
-              de Emprendedores de Junior Achievement Cordoba en 2023.<br />
+              Fuí social media manager de la red Alumni de Junior Achievement Argentina en 2022 y del <strong>Foro Internacional
+                de Emprendedores</strong> de Junior Achievement Cordoba en 2023.<br />
             </p>
             <div className="d-flex flex-row  justify-content-center align-items-center ">
               <div className="p-2">
