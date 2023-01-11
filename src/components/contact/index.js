@@ -38,7 +38,7 @@ export default function Contact() {
           <Row>
             <Col>
               <div className='' style={styles.formContainer}>
-                <Form action="https://formsubmit.io/send/7b358e37-9d97-4e74-ae25-bbeca51e39a5" method="POST" noValidate validated={validated} onSubmit={handleSubmit}>
+                <Form action="https://formsubmit.io/send/3465340a-6b9b-4e39-b849-7af070fdf638" method="POST" noValidate validated={validated} onSubmit={handleSubmit}>
 
 
                   <Row>
