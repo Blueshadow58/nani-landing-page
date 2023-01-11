@@ -24,9 +24,9 @@ export default function Header() {
         <Col xl={7} lg={12} className='d-flex ps-lg-5 flex-column align-self-center text-center text-lg-start justify-content-center"' >
 
           <span className="display-5 " style={styles.title} >¡Hola! soy Nani,</span>
-          <span className='display-2 fw-bold pb-4'>Acesora en <br /> Marketing de contenido</span>
+          <span className='display-2 fw-bold pb-4'>Asesora en <br /> Marketing de contenidos</span>
           <p className=' fs-5 fw-700 '>
-            Aca te brindare todas las herramientas necesarias para que puedas optimizar tu perfil en instagram, crear una estrategia de ventas
+            Áca te brindare todas las herramientas necesarias para que puedas optimizar tu perfil en Instagram, crear una estrategia de ventas
             y disfrutar emprender.
             ¿Estas lista?<br />
           </p>
@@ -52,8 +52,8 @@ export default function Header() {
       </Row>
     </Container>
     {/* insert jump of line  */}
-    <FloatingWhatsApp phoneNumber='+549388572-6293' accountName='Nani' avatar={require('../../images/Logo-Rosa.png')} statusMessage='Acesora en
-Marketing de contenido' chatMessage={'Hola!🦄\nCómo puedo ayudarte?'} placeholder={'Escribir un mensaje...'} />
+    <FloatingWhatsApp phoneNumber='+549388572-6293' accountName='Nani' avatar={require('../../images/Logo-Rosa.png')} statusMessage='Asesora en
+Marketing de contenidos' chatMessage={'Hola!🦄\nCómo puedo ayudarte?'} placeholder={'Escribir un mensaje...'} />
   </>
   )
 }
