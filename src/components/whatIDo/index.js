@@ -14,7 +14,7 @@ export default function WhatIDo() {
       <Container>
         <Row className='text-center'>
           <Col lg={12} sm={12} className='py-5 align-self-start'>
-            <span className="display-5 " style={styles.title} >¿Que hago?</span>
+            <span className="display-5 " style={styles.title} >¿Qué hago?</span>
 
           </Col>
         </Row>
@@ -31,11 +31,12 @@ export default function WhatIDo() {
             <p className='fs-5 fw-700 text-center'>
               Hoy en día tener una cuenta de Instragram, es nuestra vidriera para las emprendedoras.
               Incluso determina si una persona te compra o no.
-              Hay muchos cursos que te ayduan a optimizar tu perfil pero son muy genéricos.<br />
+              Hay muchos cursos que te ayudan a optimizar tu perfil pero son muy genéricos.<br />
               <br />
               Quiero que tu marca <strong>sea tan única </strong> que se destaque por sí sola.
               Que puedas diferenciarte fácilmente de tu competencia . Y sobre todo que puedas ser vos
               misma e ir generando una comunidad genuina que ame tu marca. <br />
+              <br />
               Así que mi <strong>propuesta es ayudarte a mejorar tu perfil</strong> en esta red social, identificando
               qué es lo que necesita ser comunicado de tu negocio, y cómo hacerlo para que tu emprendimiento pueda seguir creciendo.
             </p>

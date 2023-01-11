@@ -26,12 +26,11 @@ export default function WhoIAm() {
               Trabajé como <strong>community manager</strong> en forma freelance y como paid media
               en una Agencia de Marketing. Di capacitaciones en forma virtual y presencial a emprendedores en Jujuy, Argentina
               sobre cómo optimizar su perfil en Instagram y Google My Business a través de la Asociación Civil
-              Puertas. Enseñé sobre <strong>Google Ads, Marketing Digital </strong> y habilidades blandas a través del programa
-              <strong>Crecé con Google de Junior Achievement Argentina</strong>, donde 300 jóvenes de latinoamérica fueron
-              mis alumnos<br />
+              Puertas. Enseñé sobre <strong>Google Ads, Marketing Digital </strong> y habilidades blandas a través del programa<strong> Crecé con Google de Junior Achievement Argentina</strong>, donde 300 jóvenes de latinoamérica fueron
+              mis alumnos.<br />
               <br />
               Fuí social media manager de la red Alumni de Junior Achievement Argentina en 2022 y del <strong>Foro Internacional
-                de Emprendedores</strong> de Junior Achievement Cordoba en 2023.<br />
+                de Emprendedores</strong> de Junior Achievement Córdoba en 2023.<br />
             </p>
             <div className="d-flex flex-row  justify-content-center align-items-center ">
               <div className="p-2">
