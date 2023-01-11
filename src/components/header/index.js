@@ -25,7 +25,7 @@ export default function Header() {
 
           <span className="display-5 " style={styles.title} >¡Hola! soy Nani,</span>
           <span className='display-2 fw-bold pb-4'>Asesora en <br /> Marketing de contenidos</span>
-          <p className=' fs-5 fw-700 '>
+          <p className='fs-5 fw-700' style={styles.subTitle}>
             Áca te brindaré todas las herramientas necesarias para que puedas optimizar tu perfil en Instagram, crear una estrategia de ventas
             y disfrutar emprender.
             ¿Estás lista?<br />
@@ -43,6 +43,7 @@ export default function Header() {
           <React.Suspense fallback={<div></div>}>
             <div className='d-none d-xxl-block'>
               <RenderCircles />
+              <div style={styles.backgroundCircle}></div>
             </div>
           </React.Suspense>
 

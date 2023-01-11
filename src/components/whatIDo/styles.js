@@ -33,7 +33,6 @@ export const styles = {
         fontWeight: '500',
         fontSize: '1.4rem',
         cursor: 'pointer',
-
     },
 
 

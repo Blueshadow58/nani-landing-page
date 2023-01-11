@@ -1,10 +1,11 @@
 import { stylesWhoIAm } from './stylesWhoIAm'
 import { Col, Container, Row } from 'react-bootstrap'
-import './styles.css'
+import { styles } from './styles'
+
 
 export default function WhoIAm() {
   return (
-    <Container id='whoIAm' className=" min-vh-100  " fluid>
+    <Container id='whoIAm' className=" min-vh-100" style={styles.constainer} fluid>
       <Container>
         <Row className='text-xl-start text-center'>
           <Col xl={8} lg={12} sm={12} className='py-5 align-self-start'>
