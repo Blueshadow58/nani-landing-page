@@ -26,9 +26,9 @@ export default function Header() {
           <span className="display-5 " style={styles.title} >¡Hola! soy Nani,</span>
           <span className='display-2 fw-bold pb-4'>Asesora en <br /> Marketing de contenidos</span>
           <p className=' fs-5 fw-700 '>
-            Áca te brindare todas las herramientas necesarias para que puedas optimizar tu perfil en Instagram, crear una estrategia de ventas
+            Áca te brindaré todas las herramientas necesarias para que puedas optimizar tu perfil en Instagram, crear una estrategia de ventas
             y disfrutar emprender.
-            ¿Estas lista?<br />
+            ¿Estás lista?<br />
           </p>
 
           <div className='pt-4 '>
