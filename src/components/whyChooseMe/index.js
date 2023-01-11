@@ -24,8 +24,9 @@ export default function WhyChooseMe() {
           <Col className='d-flex flex-column  offset-xl-3 ' lg={8} md={10} sm={10} xs={12} >
             <span className='display-4 fw-bold pb-4'>Si....</span>
             <p className='fs-5 fw-700 '>
-              Te cuesta <strong>escribir</strong> las descripciones al subir posteos.
-              quisieras que tu día tenga más horas porque no te
+              Te cuesta <strong>escribir</strong> las descripciones al subir posteos.<br />
+              <br />
+              Quisieras que tu día tenga <strong>más horas</strong> porque no te
               alcanza el tiempo.<br />
               <br />
               Pones mucho esfuerzo al crear contenido y <strong>no ves
@@ -34,7 +35,7 @@ export default function WhyChooseMe() {
               Te sentis frustrada <strong>porque no sabes</strong> qué más publicar.
             </p>
             <div className='text-center mt-4 pt-5 fw-bold fs-4'>
-              <span style={styles.shineText} >¡Entonces “Brilla con Instagram” es para vos!</span>
+              <span style={styles.shineText} >¡Entonces “Brillá con Instagram” es para vos!</span>
             </div>
           </Col>
         </Row>
