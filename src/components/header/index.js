@@ -2,7 +2,6 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { styles } from './styles'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import { WindowSize } from '../../utils/windowsSize'
 const RenderCircles = React.lazy(() => import('./circle'))
 
 
@@ -12,9 +11,6 @@ export default function Header() {
     const contact = document.getElementById('contact')
     contact.scrollIntoView({ behavior: 'smooth' })
   }
-
-
-
 
 
   return (<>
