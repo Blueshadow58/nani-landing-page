@@ -13,9 +13,6 @@ export default function Header() {
     contact.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const circle = document.getElementById("backgroundCircle");
-  // add right 
-  circle.style.right = WindowSize().width > 1200 ? '4vw' : '7vw'
 
 
 

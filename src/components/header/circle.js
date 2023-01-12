@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { styles } from './styles'
 import { useRef } from 'react';
+// import { WindowSize } from '../../utils/windowsSize';
 
 const RenderCircles = () => {
     const windowSize = useRef([window.innerWidth, window.innerHeight]);
@@ -8,6 +9,13 @@ const RenderCircles = () => {
 
     useEffect(() => {
         CirclesImg()
+        const circle = document.getElementById("backgroundCircle");
+
+        if (windowSize.current > 1200) {
+            circle.style.right = '4vw'
+        } else {
+            circle.style.right = '7vw'
+        }
     }, []);
 
 
