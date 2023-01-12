@@ -11,11 +11,24 @@ const RenderCircles = () => {
         CirclesImg()
         const circle = document.getElementById("backgroundCircle");
 
-        if (windowSize.current[0] > 1600) {
-            circle.style.right = '1vw'
-        } else {
-            circle.style.right = '7vw'
+
+        switch (windowSize.current[0]) {
+            case windowSize.current[0] > 1600:
+                circle.style.right = '1vw'
+                break;
+            case windowSize.current[0] > 1200:
+                circle.style.right = '3vw'
+                break;
+            default:
+                circle.style.right = '7vw'
+                break;
         }
+
+        // if (windowSize.current > 1600) {
+        //     circle.style.right = '1vw'
+        // } else {
+        //     circle.style.right = '7vw'
+        // }
     }, []);
 
 
@@ -26,7 +39,7 @@ const RenderCircles = () => {
         if (circles.length > 0) {
             const n = 6;  // numero de circulos
             // value of the radio of the circle custom to all window sizes
-            const r = windowSize.current[0] > 1500 ? 350 : windowSize.current[0] > 1200 ? 270 : windowSize.current[0] > 992 ? 250 : windowSize.current[0] > 768 ? 200 : windowSize.current[0] > 576 ? 150 : 100
+            const r = windowSize.current[0] > 1600 ? 350 : windowSize.current[0] > 1200 ? 220 : windowSize.current[0] > 992 ? 250 : windowSize.current[0] > 768 ? 200 : windowSize.current[0] > 576 ? 150 : 100
 
 
             let angulo = 0;

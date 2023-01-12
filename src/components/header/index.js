@@ -38,14 +38,14 @@ export default function Header() {
         <Col xl={5} lg={5} className='d-flex justify-content-end align-self-end '>
 
           <React.Suspense fallback={<div></div>}>
-            <div className='d-none d-xxl-block'>
+            <div className='d-none  d-xl-block'>
               <RenderCircles />
               <div id='backgroundCircle' className='position-absolute top-50 translate-middle-y' style={styles.backgroundCircle}>
               </div>
             </div>
           </React.Suspense>
 
-          <img className='img-fluid d-none d-xxl-block' style={styles.nani} src={require('../../images/nani/nani.png')} alt='img'></img>
+          <img className='img-fluid d-none d-xl-block' style={styles.nani} src={require('../../images/nani/nani.png')} alt='img'></img>
         </Col>
         {/* </Row> */}
       </Row>
