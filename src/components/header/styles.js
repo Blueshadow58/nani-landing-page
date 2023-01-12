@@ -1,7 +1,5 @@
+
 import { COLORS } from "../../constants/colors";
-
-
-
 
 export const styles = {
     title: {
@@ -67,7 +65,12 @@ export const styles = {
         // transform: 'translateX(-15%)',
         borderRadius: "50%",
         background: "radial-gradient(circle, white 0%, #D9C0DE 100%)",
-        right: '7vw',
+        // if is laptopn then 7vw else 4vw
+
+
+
+        // right: WindowSize().width > 1200 ? '7vw' : '4vw',
+
     },
 
 

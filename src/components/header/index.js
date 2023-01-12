@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { styles } from './styles'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { WindowSize } from '../../utils/windowsSize'
 const RenderCircles = React.lazy(() => import('./circle'))
 
 
@@ -12,6 +13,9 @@ export default function Header() {
     contact.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const circle = document.getElementById("backgroundCircle");
+  // add right 
+  circle.style.right = WindowSize().width > 1200 ? '4vw' : '7vw'
 
 
 
@@ -43,7 +47,7 @@ export default function Header() {
           <React.Suspense fallback={<div></div>}>
             <div className='d-none d-xxl-block'>
               <RenderCircles />
-              <div className='position-absolute top-50 translate-middle-y' style={styles.backgroundCircle}>
+              <div id='backgroundCircle' className='position-absolute top-50 translate-middle-y' style={styles.backgroundCircle}>
               </div>
             </div>
           </React.Suspense>
