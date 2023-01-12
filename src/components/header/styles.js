@@ -58,8 +58,9 @@ export const styles = {
         // justifyContent: 'center',
         // alignitems: 'center',
         // justifyContent: 'ends',
-        width: "35vw",
-        height: "70vh",
+        width: "30rem",
+        height: "30rem",
+
         // position: "absolute",
         zIndex: '0',
         // transform: 'translateX(-15%)',
