@@ -43,7 +43,8 @@ export default function Header() {
           <React.Suspense fallback={<div></div>}>
             <div className='d-none d-xxl-block'>
               <RenderCircles />
-              <div style={styles.backgroundCircle}></div>
+              <div className='position-absolute top-50 translate-middle-y' style={styles.backgroundCircle}>
+              </div>
             </div>
           </React.Suspense>
 

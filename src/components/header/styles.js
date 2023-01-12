@@ -1,5 +1,8 @@
 import { COLORS } from "../../constants/colors";
 
+
+
+
 export const styles = {
     title: {
         color: COLORS.secondary,
@@ -53,24 +56,18 @@ export const styles = {
         transform: "translate(-50 %, -50 %)",
     },
     backgroundCircle: {
-        width: "35rem",
-        height: "35rem",
-        position: "absolute",
-        //circle cannot be in front of the page
+        // display: 'flex',
+        // justifyContent: 'center',
+        // alignitems: 'center',
+        // justifyContent: 'ends',
+        width: "35vw",
+        height: "70vh",
+        // position: "absolute",
         zIndex: '0',
-        // to left
-        // margin: 'auto',
-        // to left
-        transform: 'translateX(-15%)',
-        // top: '20%',
-        // right: '25rem',
-        // bottom: '50vh',
+        // transform: 'translateX(-15%)',
         borderRadius: "50%",
-        // right: '350px',
-        // bottom: '50vh',
         background: "radial-gradient(circle, white 0%, #D9C0DE 100%)",
-        // background: "linear-gradient(90deg, white 0%, rgba(245,224,236,1) 100%)",
-        // zIndex: '0',
+        right: '7vw',
     },
 
 
