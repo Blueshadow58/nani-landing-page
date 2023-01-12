@@ -35,7 +35,7 @@ export default function Header() {
           </div>
 
         </Col>
-        <Col xl={5} lg={5} className='d-flex  align-self-end '>
+        <Col xl={5} lg={5} className='d-flex justify-content-end align-self-end '>
 
           <React.Suspense fallback={<div></div>}>
             <div className='d-none  d-xl-block'>
@@ -45,7 +45,7 @@ export default function Header() {
             </div>
           </React.Suspense>
 
-          <img className='d-none  d-xl-block' style={styles.nani} src={require('../../images/nani/nani.png')} alt='img'></img>
+          <img className='d-none d-xl-block' style={styles.nani} src={require('../../images/nani/nani.png')} alt='img'></img>
         </Col>
         {/* </Row> */}
       </Row>
