@@ -12,9 +12,9 @@ const RenderCircles = () => {
         const circle = document.getElementById("backgroundCircle");
 
         if (windowSize.current > 1200) {
-            circle.style.right = '4vw'
+            circle.style.right = '7vw'
         } else {
-            // circle.style.right = '7vw'
+            circle.style.right = '1vw'
         }
     }, []);
 
