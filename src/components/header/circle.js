@@ -14,7 +14,7 @@ const RenderCircles = () => {
         if (windowSize.current > 1200) {
             circle.style.right = '4vw'
         } else {
-            circle.style.right = '7vw'
+            // circle.style.right = '7vw'
         }
     }, []);
 
