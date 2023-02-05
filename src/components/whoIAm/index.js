@@ -37,6 +37,7 @@ export default function WhoIAm() {
               <div className="p-2">
                 <img className='img-fluid' src={require('../../images/google/Google_Ads_logo.png')} alt='img'></img>
               </div>
+              <div className='px-2'></div>
               <div className="p-2">
                 <img className='img-fluid' src={require('../../images/google/google_google_achievement.png')} alt='img'></img>
               </div>
